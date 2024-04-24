@@ -14,7 +14,7 @@ export default function TechnicalSkills() {
   //   console.log(technicalSkills[0]);
   //  },[])
   return (// Modal Popup Github APi
-    <div>
+    <div className='flex flex-wrap justify-center'>
       {
        technicalSkills.map((item)=>
        <div className='m-4'>

@@ -4,7 +4,7 @@ export const initialData ={
     TechSkills:[{
         name:'Java',
         image_url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ZWVEcZU42G4FQbbGPJULwPZYDT67g1kyNLH4liuTIQ&s',
-        description:'where i learn it'
+        description:'1st - 4th year uni i progressively learnt it, COMP1000 , COMP2000 etc'
     },
     {
         name:'SQL',
