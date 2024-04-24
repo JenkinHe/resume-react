@@ -24,8 +24,8 @@ export default function TechnicalSkills() {
 
   
   
-  return (//Github APi
-    <div className='flex flex-wrap justify-center'>
+  return (
+    <div className='flex flex-wrap justify-center '>
       {showModalPopup?
       <CustomModalPopup item={displayedSkill} onClose={onClose}/>
        :
@@ -34,7 +34,7 @@ export default function TechnicalSkills() {
         {
           technicalSkills.map((item)=>
           <button key={item.name} onClick={()=>handleOpen(item)}>
-           <div className='m-4'>
+           <div className='m-10'>
            <TechSkillsCard skillItem={item}/>
            </div>
           </button>
