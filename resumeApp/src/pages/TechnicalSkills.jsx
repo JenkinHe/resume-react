@@ -7,18 +7,18 @@ import CustomModalPopup from '../components/CustomModalPopup.jsx'
 
 export default function TechnicalSkills() {
   const [showModalPopup,setShowModalPopup] =useState(false);
-  const [displayedModalName,setDisplayedModalName] =useState('');
+  const [displayedSkill,setDisplayedSkill] =useState({});
 
   const {technicalSkills} =useContext(GlobalContext);
 
-  function handleOpen(name){
-    setDisplayedModalName(name)
+  function handleOpen(item){
+    setDisplayedSkill(item)
     setShowModalPopup(true)
   }
 
   function onClose(){
     setShowModalPopup(false)
-    setDisplayedModalName('')
+    setDisplayedSkill({})
   }
 
   
@@ -26,9 +26,9 @@ export default function TechnicalSkills() {
   return (// Modal Popup Github APi
     <div className='flex flex-wrap justify-center'>
       {showModalPopup?
-      <CustomModalPopup name={displayedModalName} content={displayedModalName} onClose={onClose}/>
+      <CustomModalPopup item={displayedSkill} onClose={onClose}/>
        :technicalSkills.map((item)=>
-       <button key={item.name} onClick={()=>handleOpen(item.name)}>
+       <button key={item.name} onClick={()=>handleOpen(item)}>
         <div className='m-4'>
         <TechSkillsCard skillItem={item}/>
         </div>
