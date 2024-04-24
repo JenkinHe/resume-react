@@ -53,7 +53,7 @@ export const initialData ={
     },{
         name:'Python',
         image_url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMh34DPK8RyB1zIg3PGEJtIoH1X5vB1SoIfXYMB23lg&s',
-        description:'learnt fundamentals to aleviate boredom but dislike its syntax'
+        description:'learnt fundamentals to alleviate boredom but dislike its syntax'
     },
     {
         name:'C',
