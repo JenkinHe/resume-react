@@ -3,26 +3,28 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <div className='flex flex-row'>
-      <h3>My Resume React</h3>
-      <ul className='flex flex-row'>
-        <Link to={'/'}>
-          <li>Home</li>
+    <div className='flex flex-col text-center'>
+      <Link to={'/'}>
+      <h3 className='text-4xl'>My Resume React</h3>
         </Link>
-        <Link to={'/techinical-skills'}>
-          <li>Technical Skills</li>
+      <ul className='flex flex-row mx-auto py-3'>
+        <Link to={'/'}>
+          <li className='mx-4 inline-block bg-blue-400 hover:bg-blue-300 text-white rounded-full px-3 py-1 text-2xl font-sans font-open-sans text-center'>Home</li>
+        </Link>
+        <Link to={'/technical-skills'}>
+          <li className='mx-4 inline-block bg-blue-400 hover:bg-blue-300 text-white rounded-full px-3 py-1 text-2xl font-sans font-open-sans text-center'>Technical Skills</li>
         </Link>
         <Link to={'/soft-skills'}>
-          <li>Soft Skills</li>
+          <li className='mx-4 inline-block bg-blue-400 hover:bg-blue-300 text-white rounded-full px-3 py-1 text-2xl font-sans font-open-sans text-center'>Soft Skills</li>
         </Link>
         <Link to={'/education'}>
-          <li>Education</li>
+          <li className='mx-4 inline-block bg-blue-400 hover:bg-blue-300 text-white rounded-full px-3 py-1 text-2xl font-sans font-open-sans text-center'>Education</li>
         </Link>
         <Link to={'/work-history'}>
-          <li>Work History</li>
+          <li className='mx-4 inline-block bg-blue-400 hover:bg-blue-300 text-white rounded-full px-3 py-1 text-2xl font-sans font-open-sans text-center'>Work History</li>
         </Link>
         <Link to={'/hobbies'}>
-          <li>Hobbies</li>
+          <li className='mx-4 inline-block bg-blue-400 hover:bg-blue-300 text-white rounded-full px-3 py-1 text-2xl font-sans font-open-sans text-center'>Hobbies</li>
         </Link>
       </ul>
     </div>
