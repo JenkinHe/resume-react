@@ -16,8 +16,13 @@ export default function TechnicalSkills() {
   return (// Modal Popup Github APi
     <div>
       {
-       // TechSkillsData.map((item)=><p>{item.name}</p>)
+       technicalSkills.map((item)=>
+       <div className='m-4'>
+        <TechSkillsCard skillItem={item}/>
+        </div>
+       )
       }
+      
     </div>
   )
 }
