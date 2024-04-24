@@ -8,7 +8,7 @@ export default function CustomModalPopup({ item, onClose }) {
         <div className='bg-white rounded-lg p-4 flex'>
             <div className='flex flex-col'>
                 <div className='flex flex-row'>
-                    <img src={item.image_url} />
+                    <img src={item.image_url} className='w-40 h-auto' />
                     <div>
                         <h2 className="text-2xl font-bold mb-4">{item.name}</h2>
                         <p className="text-gray-800">{item.description}</p>
