@@ -23,7 +23,7 @@ export default function TechnicalSkills() {
 
   
   
-  return (// Modal Popup Github APi
+  return (//Github APi
     <div className='flex flex-wrap justify-center'>
       {showModalPopup?
       <CustomModalPopup item={displayedSkill} onClose={onClose}/>
