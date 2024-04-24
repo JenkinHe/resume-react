@@ -3,6 +3,7 @@ import TechSkillsCard from '../components/TechSkillsCard'
 import { useEffect } from 'react';
 import {GlobalContext} from '../context/GlobalContext.jsx';
 import CustomModalPopup from '../components/CustomModalPopup.jsx'
+import GitHubDProfileDisplay from '../components/GitHubDProfileDisplay.jsx';
 
 
 export default function TechnicalSkills() {
@@ -27,14 +28,21 @@ export default function TechnicalSkills() {
     <div className='flex flex-wrap justify-center'>
       {showModalPopup?
       <CustomModalPopup item={displayedSkill} onClose={onClose}/>
-       :technicalSkills.map((item)=>
-       <button key={item.name} onClick={()=>handleOpen(item)}>
-        <div className='m-4'>
-        <TechSkillsCard skillItem={item}/>
+       :
+       <div>
+        <GitHubDProfileDisplay/>
+        {
+          technicalSkills.map((item)=>
+          <button key={item.name} onClick={()=>handleOpen(item)}>
+           <div className='m-4'>
+           <TechSkillsCard skillItem={item}/>
+           </div>
+          </button>
+          
+          )
+        }
         </div>
-       </button>
        
-       )
       }
       
     </div>
